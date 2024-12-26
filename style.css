@@ -1,12 +1,13 @@
  body {
-     background: linear-gradient(180deg, rgba(11, 82, 172, 1) 13%, rgba(0, 215, 255, 1) 100%);
- }
+    background: linear-gradient(180deg, rgba(11, 82, 172, 1) 13%, rgba(0, 215, 255, 1) 100%);
+    background-repeat: no-repeat;    
+}
 
- i {
+ i{
      font-size: 45px;
  }
 
- @media screen and (max-width:640px) {
+ /* @media screen and (max-width:640px) {
      .main-container {
          width: 90%;
          margin: 0%;
@@ -22,7 +23,7 @@
          width: 70%;
 
      }
- }
+ } */
 
  @media screen and (max-width:425px) {
      .main-container {
@@ -32,12 +33,11 @@
 
      .heading {
          text-align: center;
-         font-size: 3.5rem;
+         font-size: 3rem;
          font-weight: 600;
      }
 
-     .w-44 {
+     #miniBox {
          width: 100%;
-
      }
  }
