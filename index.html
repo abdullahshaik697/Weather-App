@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>AB Weather App</title>
+</head>
+<body>
+    <div class="main-container rounded-2xl mt-10 flex flex-col items-center justify-center w-2/4 m-auto  sm:w-full">
+
+   
+    <h1 class="heading text-7xl m-4" >Weather App</h1>
+    <label class="ques text-2xl mt-5"> Enter City Name</label>
+    <div class="searchBox m-4">
+        <input type="text" id="cityInput" class="h-8 rounded">
+        <button id="searchButton" class="px-2 py-1 text-white rounded bg-blue-900">Search</button>
+    </div>
+
+    <div class="locationBox flex flex-col text-2xl font-medium">
+        <label class="">City: <span id="cityNameDiv"></span></label>
+        <label>Country: <span id="countryName"></span></label>
+    </div>
+    <div class="details w-3/4 flex flex-wrap justify-center align-middle mt-6">
+        <span class="w-44 h-36 bg-teal-300 text-2xl m-6 flex flex-col font-medium items-center justify-center rounded-3xl">
+            <h1 style="font-size: 1.2rem;">Temp</h1>
+            <i class="fa-solid fa-temperature-three-quarters" id="temperature"> </i> 
+            <h1 style="font-size: 1.3rem;">Celsius</h1>
+        </span>
+        <span class="w-44 h-36 bg-teal-300 text-2xl m-6 flex flex-col font-medium items-center justify-center rounded-3xl">
+            <h1 style="font-size: 1.2rem;">Feels Like</h1>
+            <i class="fa-solid fa-sun" id="feelsLike"> </i> 
+            <h1 style="font-size: 1.3rem;">Celsius</h1>
+        </span>
+        <span class="w-44 h-36 bg-teal-300 text-2xl m-6 flex flex-col font-medium items-center justify-center rounded-3xl">
+            <h1 style="font-size: 1.2rem;">Wind Speed</h1>
+            <i class="fa-solid fa-wind" id="windSpeed"> </i> 
+            <h1 style="font-size: 1.3rem;">m/s</h1>
+        </span>
+        <span class="w-44 h-36 bg-teal-300 text-2xl m-6 flex flex-col font-medium items-center justify-center rounded-3xl">
+            <h1 style="font-size: 1.2rem;">Humidity</h1>
+            <i class="fa-solid fa-droplet" id="humidity"> </i> 
+            <h1 style="font-size: 1.3rem;">%</h1>
+        </span>
+    </div>
+
+</div>
+</body>
+<script src="app.js"></script>
+</html>
